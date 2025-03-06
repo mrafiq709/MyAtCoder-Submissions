@@ -22,15 +22,11 @@ int main() {
         vector<bool> covered(N + 1, false);
         for(int j = 0; j < M; j++) {
             if(i & (1 << j)) {
-                //  cout << "{";
                 for(int num : sets[j]) {
                    covered[num] = true;
-                //   cout << num << ", ";
                 }
-                // cout <<"}, ";
             }
         }
-        // puts("");
         bool isValid = true;
         for(int k = 1; k <= N; k++) {
             if(!covered[k]) {
