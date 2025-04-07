@@ -10,7 +10,6 @@ int main() {
     }
     
     for(int i = 97; i <= 122; i++) {
-        // cout << arr[i] << " ";
         if(arr[i] % 2 == 1) {
             cout << "No" << endl;
             return 0;
