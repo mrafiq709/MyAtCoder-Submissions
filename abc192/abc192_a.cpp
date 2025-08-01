@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
+#define ll long long
 using namespace std;
 
 int main() {
-  int x;
-  cin >> x;
-  if(x%100 == 0) cout << 100 << endl;
-  else cout << 100 - (x%100) << endl;
-  return 0;
+    int n;
+    cin >> n;
+    cout << (100 - n % 100) << endl;
+    return 0;
 }
