@@ -1,0 +1,10 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int S, W;
+    cin >> S >> W;
+    if(W >= S) puts("unsafe");
+    else puts("safe");
+    return 0;
+}
